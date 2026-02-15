@@ -1,0 +1,144 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.menu-item {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+/* hover 状态时卡片的变换效果 */
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 确保点击时没有不必要的缩放 */
+.menu-item:active {
+  transform: none; /* 防止点击时卡片缩小 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 保持原始阴影 */
+}
+
+/* 菜品图片的样式 */
+.menu-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.item-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.item-price {
+  font-size: 18px;
+  color: #f44336;
+  margin-top: 5px;
+}
+
+.cart {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.cart h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+.cart ul li button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart ul li button:hover {
+  background-color: #d32f2f;
+}
+
+/* 总金额 */
+.total {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+#totalAmount {
+  color: #000; /* 将总金额颜色改为黑色 */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+    

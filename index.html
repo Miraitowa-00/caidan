@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高级点餐页面</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="menu">
+  <h2>选择你的菜品</h2>
+
+  <!-- 菜品列表 -->
+  <div class="menu-item" data-id="item-1" onclick="toggleItem(1)">
+    <img src="https://via.placeholder.com/150" alt="宫保鸡丁" class="item-image">
+    <span class="item-name">宫保鸡丁</span>
+    <span class="item-price">¥32</span>
+  </div>
+
+  <div class="menu-item" data-id="item-2" onclick="toggleItem(2)">
+    <img src="https://via.placeholder.com/150" alt="鱼香肉丝" class="item-image">
+    <span class="item-name">鱼香肉丝</span>
+    <span class="item-price">¥28</span>
+  </div>
+
+  <div class="menu-item" data-id="item-3" onclick="toggleItem(3)">
+    <img src="https://via.placeholder.com/150" alt="麻辣香锅" class="item-image">
+    <span class="item-name">麻辣香锅</span>
+    <span class="item-price">¥38</span>
+  </div>
+
+  <div class="menu-item" data-id="item-4" onclick="toggleItem(4)">
+    <img src="https://via.placeholder.com/150" alt="红烧肉" class="item-image">
+    <span class="item-name">红烧肉</span>
+    <span class="item-price">¥45</span>
+  </div>
+</div>
+
+<!-- 购物车显示区域 -->
+<div class="cart">
+  <h2>购物车</h2>
+  <ul id="cartItems"></ul>
+  <div class="total">
+    <span>总金额: ¥</span><span id="totalAmount">0</span>
+  </div>
+</div>
+
+<!-- Ensure the script file is loaded at the end -->
+<script src="/src/script.js"></script>
+</body>
+</html>
